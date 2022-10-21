@@ -127,21 +127,28 @@ const Navbar = () => {
                     
                 </div>
             </li>
+            <li>
+            <a href="#"><GoThreeBars  size={"30px"} color={"black"}/></a>
+            <div className='dropDownCart'>
+                    
+                </div>
+            </li>
+
         </ul>
       </div>
       <div className='mobileSize'>
         <ul>
-            <li><a href="">
-                    <MdSearch size={"30px"} color={"black"}/>
+            <li><a href="#">
+                    <MdSearch size={"30px"} color={"black"}  className={"searchIcon"}/>
             </a>
             </li>
             <li>
-                <a href="">
+                <a href="#">
                         <MdOutlineShoppingCart size={"30px"} color={"black"} />
                 </a>
             </li>
             <li>
-                <a href="">
+                <a href="#">
                         <GoThreeBars  size={"30px"} color={"black"}/>
                 </a>
             </li>

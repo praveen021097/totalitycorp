@@ -1,0 +1,382 @@
+.container {
+  width: 100%;
+  background-color: #1868b7;
+  font-family: Poppins, sans-serif;
+  padding-top: 20px;
+}
+
+.upperFooter {
+  display: flex;
+  justify-content: space-between;
+
+  width: 85%;
+  margin: auto;
+}
+.signup {
+  padding-left: 10px;
+  width: 49%;
+
+}
+.signup > h3 {
+  color: white;
+}
+.signup > div {
+  width: 87%;
+}
+.signup > div > p {
+  color: white;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 1.5;
+}
+.searchSign {
+  width: 100%;
+}
+.searchSign > input {
+  width: 70%;
+  height: 40px;
+  color: grey;
+  border: none;
+  outline: 0;
+  font-size: 18px;
+  border-radius: 7px;
+  padding-left: 10px;
+}
+.searchSign > button {
+  padding: 12px 30px;
+  font-size: 18px;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  background-color: #2081e2;
+  margin-left: 10px;
+}
+
+.joinCommunity {
+  width: 49%;
+  
+}
+.joinCommunity > h3 {
+  color: white;
+}
+.icons {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(7, 57px);
+  grid-gap: 15px;
+}
+
+.icons > div {
+  height: 55px;
+  display: flex;
+  padding-top: 5px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: #2081e2;
+}
+.midFooter {
+    border-top: 1px solid rgba(255, 255, 255, 0.75);
+  display: flex;
+  justify-content: space-between;
+
+  gap: 20px;
+  margin: auto;
+  width: 85%;
+ 
+  margin-top: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.75);
+}
+.marketMyAcc {
+  width: 28%;
+  display: flex;
+  justify-content: space-between;
+ 
+}
+.marketPlace {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  gap: 10px;
+}
+.myAccounts {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  gap: 10px;
+}
+
+.resources {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  gap: 10px;
+}
+.company {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  gap: 13px;
+}
+h4 {
+  color: white;
+  margin-bottom: 10px;
+}
+a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+.about {
+  padding-left: 10px;
+  width: 28%;
+ 
+}
+.about > img {
+  width: 50px;
+  height: 50px;
+  margin-top: 22px;
+}
+.about > h3 {
+  margin-top: 10px;
+  color: white;
+}
+.about > div {
+  padding: 0;
+  margin-top: -15px;
+  width: 240px;
+  text-align: left;
+}
+.about > div > p {
+  color: white;
+  font-size: 17px;
+  line-height: 25px;
+
+  word-spacing: 0.01cm;
+}
+.resourComp {
+  display: flex;
+  justify-content: space-between;
+  width: 28%;
+  
+}
+.footerOfFooter {
+    border-top: 1px solid rgba(255, 255, 255, 0.75);
+   
+  width: 85%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+.footerOfFooter > div > p {
+  color: white;
+  font-size: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+  .upperFooter {
+    display: block;
+    text-align: center;
+  }
+  .signup {
+    display: block;
+    width: 85%;
+    text-align: center;
+  }
+  .signup >div:nth-child(1){
+    width: 100%;
+  }
+  .searchSign {
+    margin: auto;
+    display: flex;
+    text-align: center;
+
+    align-items: center;
+    width: 100%;
+   
+  }
+  .joinCommunity {
+    display: block;
+    width: 85%;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .searchSign > input {
+    width: 270px;
+  }
+  .searchSign > button {
+    padding: 5px 20px 5px 20px;
+    width: 100px;
+  }
+  .icons {
+    width: 85%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 10px;
+  }
+  .icons > div {
+    width: 50px;
+    height: 50px;
+  }
+  .midFooter {
+    border-top: 1px solid rgba(255, 255, 255, 0.75);
+    width: 85%;
+    margin: auto;
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+  }
+  .midFooter > div {
+    width: 85%;
+    text-align: center;
+  }
+  .midFooter > div > div {
+    width: 100%;
+  }
+  .footerOfFooter {
+    border-top: 1px solid rgba(255, 255, 255, 0.75);
+    width: 85%;
+    margin: auto;
+    display: block;
+
+    text-align: center;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1000px) {
+  .upperFooter {
+    display: block;
+    text-align: center;
+  }
+  .signup {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  .searchSign {
+    margin: auto;
+    display: flex;
+    text-align: center;
+
+ 
+    width: 100%;
+    
+  }
+  .joinCommunity {
+    display: block;
+    width: 85%;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .searchSign > input {
+    width: 350px;
+  }
+  .searchSign > button {
+    padding: 10px 20px 10px 20px;
+    width: 110px;
+  }
+  .icons {
+    width: 85%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 10px;
+  }
+
+  .icons > div {
+    width: 50px;
+    height: 50px;
+  }
+  .midFooter {
+    width: 85%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+    margin-top: 20px;
+  }
+  .midFooter > div:nth-child(1) {
+    width: 85%;
+    grid-area: 1/1/2/-1;
+    text-align: center;
+  }
+  .midFooter > div:nth-child(2) {
+    width: 72%;
+    grid-area: 2/1/3/2;
+    text-align: center;
+  }
+  .midFooter>div:nth-child(3){
+    width: 72%;
+    grid-area: 2/2/3/-1;
+    text-align: center;
+
+
+
+   }
+
+  .midFooter > div > div {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+    .upperFooter {
+        display: block;
+        text-align: center;
+      }
+      .signup {
+        display: block;
+        width: 100%;
+        text-align: center;
+      }
+      .searchSign {
+        margin: auto;
+        display: flex;
+        text-align: center;
+    
+        align-items: center;
+        width: 100%;
+        
+      }
+      .joinCommunity {
+        display: block;
+        width: 85%;
+        text-align: center;
+        margin-top: 20px;
+      }
+      .searchSign{
+        width: 85%;
+      }
+      .searchSign > input {
+        width: 400px;
+      }
+      .searchSign > button {
+        padding: 5px 30px 5px 30px;
+        width: 120px;
+      }
+      .icons {
+        width: 85%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: auto;
+        grid-gap: 10px;
+      }
+    
+      .icons > div {
+        width: 50px;
+        height: 50px;
+      }
+      .midFooter{
+        width: 85%;
+      }
+}
