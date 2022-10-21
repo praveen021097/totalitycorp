@@ -1,10 +1,25 @@
 import React, { useState } from 'react'
 import "./navbar.css"
 import opensea from "./../images/openseafull.png"
-import { MdSearch } from "react-icons/md";
+import { MdLanguage, MdSearch } from "react-icons/md";
 import { CgProfile } from "react-icons/cg";
 import { MdOutlineAccountBalanceWallet } from "react-icons/md";
 import { MdOutlineShoppingCart } from "react-icons/md";
+import { FaTwitter } from "react-icons/fa";
+import { CiInstagram } from "react-icons/ci";
+import { FaDiscord } from "react-icons/fa";
+import { FaYoutube } from "react-icons/fa";
+import { FaRedditAlien } from "react-icons/fa";
+import { FaTiktok } from "react-icons/fa";
+import {BsPersonFill} from "react-icons/bs";
+import {MdFavoriteBorder} from "react-icons/md";
+import {MdVisibility} from "react-icons/md";
+import {MdGridOn} from "react-icons/md";
+import {MdSettings} from "react-icons/md";
+import {MdOutlineLanguage} from "react-icons/md";
+import {MdModeNight} from "react-icons/md";
+import {GoThreeBars} from "react-icons/go";
+
 
 const Navbar = () => {
     const [onfill,setOnFill] =useState(false)
@@ -70,7 +85,13 @@ const Navbar = () => {
                     <li><a href="#">Blogs</a></li>
                     <li><a href="#">Docs</a></li>
                     <li><a href="#">News Letters</a></li>
-                    <li><a href="#"></a></li>
+                    <li><a href="#"><FaTwitter size={"22px"} color={"#323d47"} /></a>
+                    <a href="#"><CiInstagram  size={"22px"} color={"#323d47"}/></a>
+                    <a href='#'><FaDiscord size={"22px"} color={"#323d47"}/></a>
+                    <a href="#"><FaRedditAlien size={"22px"} color={"#323d47"}/></a>
+                    <a href="#"><FaYoutube  size={"22px"} color={"#323d47"}/></a>
+                    <a href='#'><FaTiktok size={"22px"} color={"#323d47"}/></a>
+                    </li>
  
                 </ul>
                 </div>
@@ -84,7 +105,15 @@ const Navbar = () => {
             <li>
             <a href="#"><CgProfile size={"30px"} color={"black"} /></a>
             <div className='dropDownProfile'>
-                    
+            <ul >
+            <li><BsPersonFill size={"25px"} color={"#323d47"} style={{marginTop:'15px'}}/><a href="#">Profile</a></li>
+            <li><MdFavoriteBorder size={"25px"} color={"#323d47"} style={{marginTop:'15px'}}/><a href="#">Favorites</a></li>
+            <li><MdVisibility size={"25px"} color={"#323d47"} style={{marginTop:'15px'}}/><a href="#">Watchlist</a></li>
+            <li><MdGridOn size={"25px"} color={"#323d47"} style={{marginTop:'15px'}}/><a href="#">My collection</a></li>
+            <li><MdSettings size={"25px"} color={"#323d47"} style={{marginTop:'15px'}}/><a href="#">Settings</a></li>
+            <li><MdLanguage size={"25px"} color={"#323d47"} style={{marginTop:'15px'}}/><a href="#">Languages</a></li>
+            <li><MdModeNight size={"25px"} color={"#323d47"} style={{marginTop:'15px'}} /><a href="#">Night Mode</a></li>
+                </ul>
                 </div>
             </li>
             <li>
@@ -97,6 +126,24 @@ const Navbar = () => {
             <div className='dropDownCart'>
                     
                 </div>
+            </li>
+        </ul>
+      </div>
+      <div className='mobileSize'>
+        <ul>
+            <li><a href="">
+                    <MdSearch size={"30px"} color={"black"}/>
+            </a>
+            </li>
+            <li>
+                <a href="">
+                        <MdOutlineShoppingCart size={"30px"} color={"black"} />
+                </a>
+            </li>
+            <li>
+                <a href="">
+                        <GoThreeBars  size={"30px"} color={"black"}/>
+                </a>
             </li>
         </ul>
       </div>

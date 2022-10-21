@@ -56,7 +56,7 @@ letter-spacing: .01cm;
 .menuTabs{
     width: 43%;
     height: 90%;
-    border: 1px solid blue;
+    
     padding-right: 15px;
 }
 
@@ -66,7 +66,7 @@ letter-spacing: .01cm;
     list-style: none;
 }
 .menuTabs>ul>li{
-    
+   
     padding-top: 5px;
     padding-bottom: 10px;
 }
@@ -86,7 +86,8 @@ letter-spacing: .01cm;
     text-decoration: none;
     font-size: 17;
     font-weight: 650;
-    color: black;
+    
+    color: #323d47;
 }
 
 .dropDown{
@@ -131,8 +132,8 @@ letter-spacing: .01cm;
     margin-top: 15px;
    text-decoration: none;
    font-size: 16px;
-   color: black;
-   font-weight: 600;
+   color: #323d47;
+   font-weight: 650;
   
    display: inline-block;
 
@@ -174,8 +175,8 @@ letter-spacing: .01cm;
     margin-top: 15px;
    text-decoration: none;
    font-size: 16px;
-   color: black;
-   font-weight: 600;
+   color: #323d47;
+   font-weight: 650;
   
    display: inline-block;
 
@@ -194,7 +195,7 @@ letter-spacing: .01cm;
     border-radius: 10px;
     position: absolute;
     top: 68px;
-    left: 64%;
+    left: 70%;
     text-align: center;
     display: none;
     background-color: white;
@@ -221,12 +222,137 @@ letter-spacing: .01cm;
     margin-top: 15px;
    text-decoration: none;
    font-size: 16px;
-   color: black;
-   font-weight: 600;
+   color: #323d47;
+   font-weight: 650;
   
    display: inline-block;
 
 }
-.menuTabs>ul>li:nth-child(2):hover .dropDownResour{
+.menuTabs>ul>li:nth-child(3):hover .dropDownResour{
     display: block;
+}
+
+
+.dropDownProfile{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 250px;
+    
+    border-radius: 10px;
+    position: absolute;
+    top: 68px;
+    left: 70%;
+    text-align: center;
+    display: none;
+    background-color: white;
+    list-style: none;
+
+    padding: 0;
+}
+.dropDownProfile>ul{
+    list-style: none;
+ width:100%;
+   padding-left: 0;
+    padding: 0;
+   
+}
+.dropDownProfile>ul>li{
+    width: 94%;
+    height: 55px;
+   padding-left: 15px;
+   display: flex;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.749);    
+}
+.dropDownProfile>ul>li>a{
+    margin-left: 10px;
+    margin-top: 15px;
+   text-decoration: none;
+   font-size: 16px;
+   color: #323d47;
+   font-weight: 650;
+  
+   display: inline-block;
+
+}
+.menuTabs>ul>li:nth-child(5):hover .dropDownProfile{
+    display: block;
+}
+
+.mobileSize{
+    width: 20%;
+    display: none;
+}
+.mobileSize>ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+}
+
+@media only screen and (max-width: 500px) {
+    .searchSection{
+        display: none;
+    }
+    .menuTabs{
+        display: none;
+    }
+    .mobileSize{
+        display: block;
+        width: 30%;
+        justify-content: space-between;
+        
+    }
+    .mobileSize>ul{
+        width: 100%;
+        justify-content: space-between;
+    }
+    .logoSection>img{
+        width: 150px;
+    }
+
+}
+
+/* @media only screen and(max-width: 600px) {
+    .searchSection{
+     width: 50%;
+     margin-left: 10px;
+    }
+     .menuTabs{
+         display: none;
+     }
+     .mobileSize{
+         display: flex;
+         width: 15%;
+         justify-content: space-between;
+         
+     }
+     .mobileSize>ul{
+         width: 100%;
+         justify-content: space-between;
+     }
+     .logoSection>img{
+         width: 160px;
+     }
+ 
+ } */
+@media only screen and(max-width: 1000px) {
+   .searchSection{
+    width: 50%;
+    margin-left: 10px;
+   }
+    .menuTabs{
+        display: none;
+    }
+    .mobileSize{
+        display: block;
+        width: 15%;
+        justify-content: space-between;
+        
+    }
+    .mobileSize>ul{
+        width: 100%;
+        justify-content: space-between;
+    }
+    .logoSection>img{
+        width: 180px;
+    }
+
 }
