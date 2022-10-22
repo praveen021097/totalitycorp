@@ -2,8 +2,8 @@ import React from 'react'
 
 const Homepage = () => {
   return (
-    <div>
-      
+    <div className='homePageContainer'>
+          
     </div>
   )
 }

@@ -203,24 +203,24 @@ a {
   }
   .joinCommunity {
     display: block;
-    width: 85%;
+    width: 100%;
+    height: auto;
     text-align: center;
     margin-top: 20px;
   }
   .searchSign > input {
-    width: 270px;
+   width: 50%;
   }
   .searchSign > button {
     padding: 5px 20px 5px 20px;
-    width: 100px;
+    width: 48%;
   }
   .icons {
-    width: 85%;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: auto;
-    grid-gap: 10px;
+    width: 100%;
+    margin-left: 10%;
+   display: flex;
+   flex-wrap: wrap;
+   
   }
   .icons > div {
     width: 50px;
@@ -264,32 +264,33 @@ a {
   .searchSign {
     margin: auto;
     display: flex;
-    text-align: center;
+   
 
  
     width: 100%;
     
   }
+ 
   .joinCommunity {
-    display: block;
-    width: 85%;
+   
+    width: 100%;
     text-align: center;
     margin-top: 20px;
   }
   .searchSign > input {
-    width: 350px;
+    width: 79%;
   }
   .searchSign > button {
     padding: 10px 20px 10px 20px;
-    width: 110px;
+   width: 19%;
   }
   .icons {
-    width: 85%;
+    width: 100%;
     margin: auto;
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: auto;
-    grid-gap: 10px;
+    
+   display: flex;
+   
+   
   }
 
   .icons > div {
@@ -341,7 +342,8 @@ a {
       .searchSign {
         margin: auto;
         display: flex;
-        text-align: center;
+        width: 100%;
+       
     
         align-items: center;
         width: 100%;
@@ -357,11 +359,11 @@ a {
         width: 85%;
       }
       .searchSign > input {
-        width: 400px;
+       width: 79%;
       }
       .searchSign > button {
-        padding: 5px 30px 5px 30px;
-        width: 120px;
+        padding: 10px 30px 10px 30px;
+        width: 19%;
       }
       .icons {
         width: 85%;
@@ -379,4 +381,17 @@ a {
       .midFooter{
         width: 85%;
       }
+}
+@media (min-width: 1200px) and (max-width: 1800px) {
+  .searchSign{
+    display: flex;
+    width: 100%;
+  }
+  .searchSign > input {
+    width: 250px;
+  }
+  .searchSign > button {
+    padding: 5px 30px 5px 30px;
+    
+  }
 }
