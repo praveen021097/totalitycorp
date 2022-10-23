@@ -8,13 +8,17 @@
     flex-direction: column;
     justify-content: space-between;
    gap: 10px;
-    align-items: center;
+    
     background-image: url("../images/grediant.png");
     background-repeat: no-repeat;
     background-size: cover;
     z-index: -1;
-    padding-left: 20px;
-    padding-right: 20px;
+     padding-left: 10px;
+    padding-right: 10px; 
+}
+.heading{
+    margin: auto;
+    text-align: center;
 }
 .heading>h1{
     font-size: 40px;
@@ -26,12 +30,13 @@
 .recordsCotainer{
     width: 100%;
     height: 600px;
-    border: 1px solid black;
+    margin-top: 20px;
+    
 }
 .tabs{
     width: 100%;
     height: 10%;
-    border: 1px solid red;
+    
     display: flex;
     justify-content: space-between;
 
@@ -40,29 +45,30 @@
 .records{
     width: 100%;
     height: 88%;
-    border: 1px solid blue;
+   
     justify-content: space-between;
     display: flex;
+
 }
 .records>div{
     width: 49%;
     height: 100%;
-    border: 1px solid red;
+   
 }
 .record>div{
     width: 100%;
     height: 20%;
-    border: 1px solid black;
+    
 }
 .tabs>div{
     width: 20%;
     height: 95%;
-    border: 1px solid black;
+    
 }
 .tabs>div>div{
     width: 50%;
     height: 100%;
-    border: 1px solid grren;
+   
 }
 
 .lastGrid{
@@ -75,12 +81,13 @@
 }
 .lastGrid>div{
     height: 300px;
-    border: 1px solid red;
+ 
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    cursor: pointer;
 
 }
 .lastGrid>div>img{
@@ -101,3 +108,87 @@
     font-size: 17px;
    font-weight: 600;
 }
+h2{
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.nft{
+    display: flex;
+    justify-content: space-between;
+
+}
+.nft>div>button{
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 17px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+.nft>div>span{
+    margin-left: 10px;
+    
+}
+.tab{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.tab>div>select{
+ 
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 550;
+    border-radius: 5px;
+    color: gray;
+    border: none;
+}
+
+.tab>div>button{
+    padding: 15px 30px ;
+    font-size: 18px;
+    font-weight: 550;
+    background-color: white;
+    color: gray;
+    border-radius: 5px;
+    border: none;
+
+}
+.tabular{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+
+}
+.tabular>div{
+    width: 49%;
+    display: flex;
+    padding-left: 10px;
+    justify-content: space-evenly;
+}
+.record>div{
+display: flex;
+cursor: pointer;
+
+
+
+}
+.record>div>div{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    font-weight: 550;
+    margin-left: 10px;
+    justify-content: space-between;
+}
+.record>div>div>img{
+    width: 80px;
+    height: 80px;
+    margin-left: 10px;
+    margin-right: 100px;
+}
+.record>div>div{
+    margin-right: 100px;
+}
+

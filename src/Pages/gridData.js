@@ -33,6 +33,6 @@ export const gridData = [
   },
   {
     image: "https://opensea.io/static/images/categories/virtual-worlds.png",
-    line: "",
+    line: "Virtual Worlds",
   },
 ];
