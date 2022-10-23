@@ -3,23 +3,78 @@
     margin: 0;
     box-sizing: border-box;
 }
+.homePageContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   gap: 10px;
+    align-items: center;
+    background-image: url("../images/grediant.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.heading>h1{
+    font-size: 40px;
+   
+    font-weight: bold;
+    line-height: 110%;
+}
 
-/* .homePageContainer{
+.recordsCotainer{
     width: 100%;
-    height: 100vh;
+    height: 600px;
     border: 1px solid black;
 }
-.slider{
-    width:80% ;
-    height: 350px;
-    margin: auto;
-    margin-top: 100px;
-    box-shadow: 0px 0px 3px grey;
-   position: relative;
-}
-.slide{
-    width: 268px;
-    height: 100%;
-    position: absolute;
+.tabs{
+    width: 100%;
+    height: 10%;
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
 
-} */
+
+}
+.records{
+    width: 100%;
+    height: 88%;
+    border: 1px solid blue;
+    justify-content: space-between;
+    display: flex;
+}
+.records>div{
+    width: 49%;
+    height: 100%;
+    border: 1px solid red;
+}
+.record>div{
+    width: 100%;
+    height: 20%;
+    border: 1px solid black;
+}
+.tabs>div{
+    width: 20%;
+    height: 95%;
+    border: 1px solid black;
+}
+.tabs>div>div{
+    width: 50%;
+    height: 100%;
+    border: 1px solid grren;
+}
+
+.lastGrid{
+    padding: 15px ;
+    
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 15px;
+}
+.lastGrid>div{
+    height: 300px;
+    border: 1px solid red;
+    border-radius: 10px;
+}
