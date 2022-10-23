@@ -77,4 +77,27 @@
     height: 300px;
     border: 1px solid red;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+}
+.lastGrid>div>img{
+    width: 100%;
+    height: 80%;
+    border-radius: 10px;
+ 
+
+
+}
+.lastGrid>div>div{
+    background-color: white;
+   padding: 10px;
+   height: 60px;
+}
+.lastGrid>div>div>span{
+    margin-top: 30px;
+    font-size: 17px;
+   font-weight: 600;
 }

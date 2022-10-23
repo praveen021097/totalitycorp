@@ -4,7 +4,10 @@ import Slider from '../Components/Slider/Slider'
 import Navbar from '../Components/Navbar'
 import SliderTwo from '../Components/Slider2/SliderTwo'
 import { SliderTwoData } from '../Components/Slider2/sliderTwoData'
-
+import { SliderThreeData } from '../Components/Slider3/sliderThreeData'
+import { SliderFourData } from '../Components/Slider4/sliderFourData'
+import Footer from "../Components/Footer";
+import { gridData } from './gridData'
 const Homepage = () => {
   
   return (
@@ -41,19 +44,23 @@ const Homepage = () => {
             </div>
          </div> 
          <SliderTwo SliderTwoData={SliderTwoData}/>
+         <SliderTwo SliderTwoData={SliderThreeData}/>
+         <SliderTwo SliderTwoData={SliderFourData} />
        
           <div className='lastGrid'>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
+              {
+                gridData.map((item,index)=>{
+                  return (
+                    <div key={index} className="gridItem">
+                      <img src={item.image} alt="" />
+                      <div><span>{item.line}</span></div>
+                    </div>
+                  )
+                })
+              }
             
             </div> 
+            <Footer />
     </div>
   )
 }
